@@ -48,7 +48,7 @@ class alumno{
                     dni_madre
                   FROM `alumno` 
                   WHERE id > 1
-                  ORDER BY `alumno`.`id` ASC LIMIT 20";
+                  ORDER BY `alumno`.`id` ASC LIMIT 1000";
         $result = $mysqliP->query($query);
         $num_total_records = $result->num_rows;
         if($num_total_records>0){
